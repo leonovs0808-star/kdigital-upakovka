@@ -144,6 +144,29 @@ body {
 .info-block p { color: var(--text2); font-size: 15px; }
 .info-block.muted { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
 
+.download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.dl-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.15s;
+}
+
+.dl-link:hover {
+    background: var(--accent-soft);
+}
+
 .doc-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -295,8 +318,17 @@ body {
     </div>
     
     <div class="info-block">
-        <h2>Для работы с ИИ</h2>
-        <p>Если нужно загрузить документы в ИИ-ассистент — используйте MD-файлы (чистый текст без HTML-разметки). Они лежат рядом в репозитории.</p>
+        <h2>Скачать документы (MD)</h2>
+        <p>Чистый текст без HTML-разметки. Можно загрузить в ИИ-ассистент или использовать как есть.</p>
+        <div class="download-list">
+            <a class="dl-link" href="docs/РМ_JTBD_анализ_KDigital_v2.md" download>① JTBD-анализ</a>
+            <a class="dl-link" href="docs/РМ_Описание_продукта_ЯД.md" download>② Описание продукта</a>
+            <a class="dl-link" href="docs/РМ_Карта_смыслов_ЯД_v2.md" download>③ Карта смыслов</a>
+            <a class="dl-link" href="docs/РМ_Маркетинговые_пули_ЯД_v2.md" download>④ Маркетинговые пули</a>
+            <a class="dl-link" href="docs/РМ_Паспорт_оффера_Специалист_по_рекламе_ЯД.md" download>⑤ Паспорт оффера</a>
+            <a class="dl-link" href="docs/РМ_ToV_Специалист_по_рекламе_ЯД.md" download>⑥ Tone of Voice</a>
+            <a class="dl-link" href="docs/Финальный_текст_лендинга_ЯД.md" download>⑦ Текст лендинга</a>
+        </div>
     </div>
     
     <div class="info-block muted">
